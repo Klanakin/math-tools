@@ -3,13 +3,13 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body {
     background-color: $color-primary;
     box-sizing: border-box;
-    color: $color-primary-contrast;
+    color: $color-primary;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
