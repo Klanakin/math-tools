@@ -1,16 +1,12 @@
 @import "./abstracts/functions";
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
-
-@import "./base/animation";
-@import "./base/base";
-@import "./base/typography";
-@import "./base/utilities";
-
+@import "./global/animation";
+@import "./global/base";
+@import "./global/typography";
+@import "./global/utilities";
 @import "./components/buttons";
+@import "./layouts/float-template";
 @import "./pages/home";
-
-
-
 
 

@@ -1,10 +1,10 @@
 .btn {
 
-    background-color: greenyellow;
+    background-color: $color-secondary;
     border-radius: .4rem;
     border-style: none;
     box-shadow: .2rem .2rem .2rem rgba(0, 0, 0, .2);
-    color: dodgerblue;
+    color: $color-secondary-contrast;
     display: inline-block;
     padding: .4rem 1rem;
     text-decoration: none;
