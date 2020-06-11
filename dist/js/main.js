@@ -1,7 +1,7 @@
 "use strict";
 class MathGcf {
     constructor(n1, n2) {
-        this.gcf = -1;
+        this.gcf = -1; // Math term - GCF: Greatest Common Factor
         n1 = Math.abs(n1);
         n2 = Math.abs(n2);
         if (n1 >= n2) {
@@ -44,14 +44,14 @@ class MathGcf {
     }
 }
 const btnGcf = document.getElementsByClassName("btn__find-gcf")[0];
-const input0 = document.getElementsByClassName("input__box")[0];
-const input1 = document.getElementsByClassName("input__box")[1];
+const input0 = document.getElementsByClassName("input__box--gcf")[0];
+const input1 = document.getElementsByClassName("input__box--gcf")[1];
 btnGcf.addEventListener("click", () => {
     const myMath = new MathGcf(+input0.value, +input1.value);
-    const result = document.getElementsByClassName("result")[0].getElementsByTagName("p")[0];
+    const result = document.getElementsByClassName("output__box--gcf")[0].getElementsByTagName("p")[0];
     if (myMath.getGcf() != -1) {
         result.innerHTML = "The GCF of "
-            + input0.value + " and " + input1.value + " is: " + myMath.getGcf();
+            + input0.value + " and " + input1.value + " is " + myMath.getGcf() + ".";
         result.style.color = "inherit";
     }
     else {
