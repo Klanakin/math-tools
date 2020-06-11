@@ -19,6 +19,42 @@ html {
 .util-center-text {
   text-align: center; }
 
+.util-margin-xs {
+  margin: .5rem; }
+
+.util-margin-s {
+  margin: 1rem; }
+
+.util-margin-m {
+  margin: 2rem; }
+
+.util-margin-l {
+  margin: 3rem; }
+
+.util-margin-horizontal-xs {
+  margin: 0 .5rem; }
+
+.util-margin-horizontal-s {
+  margin: 0 1rem; }
+
+.util-margin-horizontal-m {
+  margin: 0 2rem; }
+
+.util-margin-horizontal-l {
+  margin: 0 3rem; }
+
+.util-margin-vertical-xs {
+  margin: .5rem 0; }
+
+.util-margin-vertical-s {
+  margin: 1rem 0; }
+
+.util-margin-vertical-m {
+  margin: 2rem 0; }
+
+.util-margin-vertical-l {
+  margin: 3rem 0; }
+
 .util-margin-bottom-xs {
   margin-bottom: .5rem; }
 
@@ -69,7 +105,7 @@ html {
     transform: translateY(0);
     box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2); }
 
-input {
+.input__box {
   background-color: silver;
   border-color: white;
   border-radius: .4rem;
@@ -111,6 +147,9 @@ input {
   background-color: #1a1a1a;
   padding: .5rem; }
 
-.gcf {
+.greatest-common-factor {
   text-align: center;
   vertical-align: baseline; }
+
+.result {
+  font-size: 1.2rem; }
