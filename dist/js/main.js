@@ -2,17 +2,15 @@
 class MathGcf {
     constructor(n1, n2) {
         this.gcf = -1;
-        if (n1 > n2) {
+        n1 = Math.abs(n1);
+        n2 = Math.abs(n2);
+        if (n1 >= n2) {
             this.largerNumber = n1;
             this.smallerNumber = n2;
         }
-        else if (n2 > n1) {
+        else {
             this.largerNumber = n2;
             this.smallerNumber = n1;
-        }
-        else { // n1 === n2
-            this.largerNumber = n1;
-            this.smallerNumber = n2;
         }
     }
     getGcf() {
@@ -61,3 +59,4 @@ btnGcf.addEventListener("click", () => {
         result.style.color = "#E82C0C";
     }
 });
+//# sourceMappingURL=main.js.map

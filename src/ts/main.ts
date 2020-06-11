@@ -4,20 +4,19 @@ class MathGcf {
     gcf: number = -1;
 
     constructor(n1: number, n2: number) {
-        if (n1 > n2) {
+        n1 = Math.abs(n1);
+        n2 = Math.abs(n2);
+
+        if (n1 >= n2) {
             this.largerNumber = n1;
             this.smallerNumber = n2;
         }
-        else if (n2 > n1) {
+        else { 
             this.largerNumber = n2;
-            this.smallerNumber = n1
-        }
-        else { // n1 === n2
-            this.largerNumber = n1;
-            this.smallerNumber = n2;
+            this.smallerNumber = n1;
         }
     }
-    
+
     public getGcf() {
         this.findGcf();
         return this.gcf; 
@@ -43,7 +42,7 @@ class MathGcf {
                     this.largerNumber = this.smallerNumber;
                     this.smallerNumber = difference;
                 }
-                
+
                 difference = this.largerNumber - this.smallerNumber;
             }
 
@@ -66,7 +65,7 @@ btnGcf.addEventListener("click", () => {
         result.style.color = "inherit";
     }
     else {
-        result.innerHTML = "Either of the inputs cannot be zero." 
+        result.innerHTML = "Either of the inputs cannot be zero."
         result.style.color = "#E82C0C"
     }
 } );
